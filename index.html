@@ -3,18 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Collection of the Writings of S⌀ren Kierkegaard</title>
-  <meta name="title" content="Collection of the Writings of S⌀ren Kierkegaard" />
-  <meta name="description" content="Collection of the Writings of S⌀ren Kierkegaard" />
+  <title>Collection of the Writings of Søren Kierkegaard</title>
+  <meta name="title" content="Collection of the Writings of Søren Kierkegaard" />
+  <meta name="description" content="Collection of the Writings of Søren Kierkegaard" />
+  <link rel="preload" href="fonts/Crimson_Text/CrimsonText-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Crimson_Text/CrimsonText-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Crimson_Text/CrimsonText-Italic.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Crimson_Text/CrimsonText-BoldItalic.ttf" as="font" type="font/ttf" crossorigin>
+  <style>
+    @font-face {
+      font-family: 'Crimson Text';
+      src: url('fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Crimson Text Bold';
+      src: url('fonts/Crimson_Text/CrimsonText-Bold.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Crimson Text Italic';
+      src: url('fonts/Crimson_Text/CrimsonText-Italic.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Crimson Text Bold Italic';
+      src: url('fonts/Crimson_Text/CrimsonText-BoldItalic.ttf') format('truetype');
+    }
+
+    :root {
+      --accent-color: oklch(38% 0.1523 18.62);
+    }
+
+    body {
+      font-family: Crimson Text, serif;
+      text-decoration: none;
+    }
+
+    b {
+      font-family: Crimson Text Bold, serif;
+    }
+
+    i {
+      font-family: Crimson Text Italic, serif;
+    }
+
+    b i {
+      font-family: Crimson Text Bold Italic, serif;
+    }
+    
+    ::selection {
+      color: var(--accent-color);
+      background-color: gray;
+    }
+
+    h1 {
+      color: var(--accent-color);
+      font-size: 2em;
+      padding: 8px 4px;
+    }
+
+    h1::selection {
+      color: gray;
+      background-color: var(--accent-color);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul > li {
+      padding: 4px 0;
+      font-size: 1.4em;
+    }
+
+    ul > li a {
+      color: gray;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 1em;
+      padding: 2px 0;
+    }
+  </style>
 </head>
 <body>
-  <h1>Collection of the Writings of S⌀ren Kierkegaard (English Translation)</h1>
+  <h1><b>Collection of the Writings of <i>Søren Kierkegaard</i> (in English)</b></h1>
   <ul>
-    <li><a href='/fear-and-trembling.pdf'>Fear and Trembling — Johannes de Silentio</a></li>
-    <li><a href='/either-or.pdf'>Either Or: A Fragment of Life — Victor Eremita</a></li>
-    <li><a href='/works-of-love.pdf'>Works of Love — S⌀ren Kierkegaard</a></li>
-    <li><a href='/upbuilding-discourses-vol-5.pdf'>Upbuilding Discourses in Various Spirits (vol 5) — S⌀ren Kierkegaard</a></li>
-    <li><a href='/upbuilding-discourses-vol-15.pdf'>Upbuilding Discourses in Various Spirits (vol 15) — S⌀ren Kierkegaard</a></li>
+    <li><a href='/fear-and-trembling.pdf' target="_blank">Fear and Trembling — <i>Johannes de Silentio</i></a></li>
+    <li><a href='/either-or.pdf' target="_blank">Either Or: A Fragment of Life — <i>Victor Eremita</i></a></li>
+    <li><a href='/works-of-love.pdf' target="_blank">Works of Love — <i>Søren Kierkegaard</i></a></li>
+    <li><a href='/upbuilding-discourses-vol-5.pdf' target="_blank">Upbuilding Discourses in Various Spirits (vol 5) — <i>Søren Kierkegaard</i></a></li>
+    <li><a href='/upbuilding-discourses-vol-15.pdf' target="_blank">Upbuilding Discourses in Various Spirits (vol 15) — <i>Søren Kierkegaard</i></a></li>
+    <!--<li><a href='/upbuilding-discourses-vol-15.pdf' target="_blank">Upbuilding Discourses in Various Spirits (vol 15) — <i>Søren Kierkegaard</i></a></li>-->
   </ul>
+
+  <footer>
+    <h4>Made with 🔥 and ❤️ by <a href="https://dev.knightoffaith.systems" target="_blank"><i>Brad White</i></a></h4>
+  </footer>
 </body>
 </html>
