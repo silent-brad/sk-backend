@@ -16,5 +16,9 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install Nix
         uses: cachix/install-nix-action@v17
+      - name: Install nixpkgs
+        run: |
+          nix-channel --add https://nixos.org/channels/nixos-23.11 nixpkgs
+          nix-channel --update
       - name: Build release
         run: nix-shell --run "mix compile"
