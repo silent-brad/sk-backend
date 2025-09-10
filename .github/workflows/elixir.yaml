@@ -17,4 +17,4 @@ jobs:
       - name: Install Nix
         uses: cachix/install-nix-action@v17
       - name: Build release
-        run: nix-shell --run "mix compile" --release
+        run: nix-shell --run "mix compile"
