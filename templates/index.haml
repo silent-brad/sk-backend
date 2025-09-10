@@ -1,0 +1,7 @@
+.new If you're new to Kierkegaard, I recommend starting with <a href='/fear-and-trembling.pdf'><i>Fear and Trembling</i></a> and <a href='/on-my-work-as-an-author.pdf'><i>On My Work as an Author</i></a>.
+%ul
+  - for {url, work} <- works do
+    %li
+      %a{href: "/#{url}"}
+        %b= work["title"]
+        %span= work["author"]

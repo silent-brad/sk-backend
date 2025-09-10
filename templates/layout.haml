@@ -1,0 +1,33 @@
+!!! 5
+%html{lang: "en-US"}
+  %head
+    %title= title
+    %meta{charset: "utf-8"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+
+    %meta{name: "title", content: title}
+    %meta{name: "description", content: "Writings of Søren Kierkegaard"}
+
+    %link{rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/images/favicon-32x32.png"}
+    %link{rel: "icon", type: "image/png", sizes: "16x16", href: "/assets/images/favicon-16x16.png"}
+    %link{rel: "apple-touch-icon", sizes: "48x48", href: "/assets/images/favicon-48x48.png"}
+
+    %link{rel: "preload", href: "/assets/fonts/Crimson_Text/CrimsonText-Regular.ttf", as: "font", type: "font/ttf", crossorigin: ""}
+    %link{rel: "preload", href: "/assets/fonts/Crimson_Text/CrimsonText-Bold.ttf", as: "font", type: "font/ttf", crossorigin: ""}
+    %link{rel: "preload", href: "/assets/fonts/Crimson_Text/CrimsonText-Italic.ttf", as: "font", type: "font/ttf", crossorigin: ""}
+    %link{rel: "preload", href: "/assets/fonts/Crimson_Text/CrimsonText-BoldItalic.ttf", as: "font", type: "font/ttf", crossorigin: ""}
+
+    %link{rel: "stylesheet", href: "/assets/style.css"}
+
+  %body
+    %header
+      %h1
+        %a{href: "/"}
+          %b Writings of <i>Søren Kierkegaard</i>
+      %main
+        %section= body
+      %footer
+        %h4
+          Made with 🔥 and ❤️ by <a href="https://dev.knightoffaith.systems" target="_blank"><i>Brad White</i></a>
+    / 100% privacy-first analytics
+    %script(src="/assets/simple-analytics.js" async)
