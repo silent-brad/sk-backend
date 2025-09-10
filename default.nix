@@ -9,5 +9,7 @@ in buildMix rec {
   src = ./.;
   version = "0.0.0";
 
+  buildInputs = [ erlang elixir ];
+
   beamDeps = [ deps.toml_elixir deps.calliope ];
 }
