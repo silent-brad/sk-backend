@@ -1,6 +1,4 @@
-# Backend for Writings of S⌀ren Kierkegaard
-
-Static files hosted on [silent-brad/sk](https://github.com/silent-brad/sk)
+# Writings of S⌀ren Kierkegaard
 
 Hosted on [https://sk.knightoffaith.systems](https://sk.knightoffaith.systems)
 
