@@ -6,7 +6,8 @@ defmodule Sk do
 
     works =
       data["works"]
-      |> format_dates()
+      |> format_dates
+      |> Enum.reverse()
 
     {:ok, index_file} = File.read("templates/index.haml")
     works_data = [works: works]
@@ -42,7 +43,7 @@ defmodule Sk do
     layout_data = [title: title, body: body]
     parsed_layout_file = Calliope.render(layout_file, layout_data)
 
-    File.write("public/#{out_file}", parsed_layout_file)
+    File.write("docs/#{out_file}", parsed_layout_file)
   end
 
   defp format_dates(works) do

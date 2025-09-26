@@ -19,3 +19,13 @@ description = '''
 Writing under the pseudonym of Johannes de silentio, Kierkegaard uses the form of a dialectical lyric to present his conception of faith. Abraham is portrayed as a great man, who chose to sacrifice his son, Isaac, in the face of conflicting expectations and in defiance of any conceivable ethical standard. The infamous and controversial 'teleological suspension of the ethical' challenged the contemporary views of Hegel's universal moral system, and the suffering individual must alone make a choice 'on the strength of the absurd'. Kierkegaard's writings have inspired both modern Protestant theology and existentialism.
 '''
 cover = "fear-and-trembling.jpg"
+
+[works.concept-of-dread]
+title = "The Concept of Dread"
+author = "Vigilius Haufneinsis"
+date = 1844-06-17
+pdf = "concept-of-dread.pdf"
+description = '''
+Description here..
+'''
+cover = "concept-of-dread.jpg"
